@@ -1,9 +1,15 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import { Avatar, Box, Typography, TextField, InputAdornment } from '@mui/material'
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded'
+'use client';
+import React, { useEffect, useState } from 'react';
+import { Avatar, Box, Typography, TextField, InputAdornment } from '@mui/material';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 export const Hero = () => {
+    const [currentPath, setCurrentPatch] = useState('');
+    useEffect(() => {
+        setCurrentPatch(window.location.pathname);
+        console.log(window.location.pathname);
+    });
+
 
   return (
 
